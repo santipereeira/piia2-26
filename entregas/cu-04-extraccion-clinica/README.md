@@ -25,12 +25,13 @@ Los objetivos iniciales propuestos son:
 
 ## Punto de partida confirmado
 
-Según la información de la primera reunión y el contexto facilitado al equipo:
+Según la información de la primera reunión, el contexto facilitado al equipo y las aclaraciones de Ceres Fernández Rozadilla del 2 de noviembre de 2026:
 
 - Se dispone de varios PDF de historias clínicas facilitadas como ejemplos anonimizados.
+- IANUS únicamente permite exportar los informes en PDF. El resto de la información necesaria se obtiene mediante copia y pegado manual.
 - Los documentos incluyen texto digital, páginas escaneadas, formularios, anotaciones manuscritas y contenido en distintos idiomas. Se han identificado tachaduras, casillas sin marcar, información repetida, datos históricos y fragmentos ilegibles.
 - Cada entrada al sistema corresponde a **un único paciente**. Se han contemplado PDF, DOCX, texto copiado desde el portapapeles y carpetas con varios documentos como posibles entradas; esto no confirma que todos esos formatos deban admitirse inicialmente.
-- Se dispone de un libro de códigos de REDCap que describe campos, tipos, opciones y reglas. La tutora ha indicado que **no es necesario extraer todas sus variables**.
+- Se dispone de un libro de códigos de REDCap que describe campos, tipos, opciones y reglas. La tutora ha indicado que **no es necesario extraer todas sus variables** y que el subconjunto prioritario se facilitará posteriormente.
 
 Los PDF originales son material de consulta local en `data/`, excluido mediante `.gitignore`, y no forman parte de la entrega. No se incluirán historias clínicas ni datos de pacientes, tampoco en ejemplos, capturas o resultados de pruebas. La exclusión no elimina archivos que ya estén versionados ni copias conservadas en referencias internas de Git; antes de publicar debe comprobarse el contenido de los commits que se vayan a entregar.
 
@@ -42,7 +43,7 @@ Esta delimitación es una propuesta del equipo para orientar las especificacione
 
 ### Incluido en la propuesta
 
-- Ingesta de documentación de un único paciente por entrada, tomando los PDF disponibles como primer formato de trabajo. El posible conjunto de documentos de una entrada debe pertenecer a ese mismo paciente.
+- Ingesta de documentación de un único paciente por entrada, limitada inicialmente a PDF. Este alcance propuesto todavía no cubre toda la información que actualmente requiere copia y pegado manual. El posible conjunto de documentos de una entrada debe pertenecer a ese mismo paciente.
 - Preparación del contenido digital y escaneado para su análisis, con identificación de las partes que no puedan leerse o interpretarse. La cobertura de manuscritos e idiomas deberá concretarse a partir de los ejemplos y su viabilidad.
 - Extracción del subconjunto de variables que se acuerde, considerando el contexto clínico y temporal para evitar confundir datos históricos con actuales o tratar las repeticiones como hechos nuevos.
 - Identificación de información ausente, ambigua, contradictoria o ilegible, sin completar valores mediante suposiciones. La resolución de contradicciones queda pendiente de acordar.
@@ -60,15 +61,15 @@ El acceso directo a IANUS y la escritura automática en REDCap no se incluyen en
 
 ### Pendiente de validación
 
-Se han trasladado a la tutora consultas sobre el procedimiento actual de extracción desde IANUS, las variables prioritarias del libro de códigos, la interpretación de información contradictoria o histórica, el funcionamiento esperado del sistema y su relación con REDCap, y la disponibilidad de ejemplos de referencia. Todavía no se dispone de sus respuestas. La tabla recoge las decisiones pendientes de validación, incluidas cuestiones que aún deben consultarse.
+Las aclaraciones de la tutora concretan la exportación desde IANUS y mantienen abiertas las decisiones siguientes. El análisis de ejemplos y los debates pendientes no equivalen a reglas clínicas ni a un flujo de revisión ya acordados.
 
 | Cuestión | Decisión que condiciona |
 |---|---|
 | Variables clínicas prioritarias | Qué información se extraerá y qué parte del libro de códigos se utilizará. |
-| Contradicciones entre documentos | Qué criterios clínicos y temporales permitirán resolverlas o mantenerlas pendientes. |
-| Posibilidades reales de exportación desde IANUS | Cómo se obtendrán los documentos de entrada y qué formatos estarán disponibles. |
+| Contradicciones entre documentos | Su gestión requiere analizar ejemplos concretos antes de acordar los criterios aplicables. |
+| Registro de REDCap de referencia | La entidad podría prepararlo, pero todavía no lo ha proporcionado. |
 | Salida intermedia o introducción directa en REDCap | Qué resultado entregará el sistema y cómo se incorporará al estudio. |
-| Revisión humana obligatoria | Quién revisará los resultados y en qué momento será necesaria su validación. |
+| Posible revisión intermedia de resultados | Debe debatirse con el equipo; su obligatoriedad, responsables y momento no están acordados. |
 | Métricas y umbrales de rendimiento | Cómo se evaluará la extracción y con qué condiciones se considerará aceptable. |
 | Otros formatos, manuscritos e idiomas | Si se admitirán DOCX, portapapeles o carpetas y qué cobertura de lectura se exigirá. |
 | Tratamiento de los materiales y resultados | Qué entorno y condiciones de acceso, almacenamiento y procesamiento se acordarán con la entidad. |
