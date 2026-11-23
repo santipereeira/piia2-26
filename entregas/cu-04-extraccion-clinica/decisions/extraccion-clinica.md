@@ -165,12 +165,12 @@ Con la decisión «puerto + reglas», los tres enfoques con modelo quedan en **d
 ## Referencias
 
 - [Spec CLI-001](../specs/extraccion-datos-clinicos.md) — Estados, comportamiento, 25 criterios de aceptación
-- [Contrato clínico (Pydantic)](../experiments/formato_intermedio_poc/cli_rcp/modelo_pydantic.py) — `ResultadoClinico`, `Mencion`, `Evidencia`, `Cobertura`
-- [Contrato clínico (dataclasses)](../experiments/formato_intermedio_poc/cli_rcp/modelo_dataclasses.py) — Mismo modelo sin Pydantic
-- [Casos sintéticos PoC anterior](../experiments/formato_intermedio_poc/cli_rcp/casos_sinteticos.py) — `D1`–`D7`
-- [Nuevo catálogo S1–S12](../experiments/extraccion_clinica_poc/casos.py) — Constructores parametrizables
-- [Motor de reglas](../experiments/extraccion_clinica_poc/motores.py) — `MotorReglas`, once familias, `MOTORES`
-- [Puerto del motor](../experiments/extraccion_clinica_poc/contrato.py) — `MotorExtraccion`, `EstadoEjecucion`, `NoComprobado`
+- [Contrato clínico (Pydantic)](https://github.com/lucasmtnz23/cu04-extraccion-clinica/blob/main/experiments/formato_intermedio_poc/cli_rcp/modelo_pydantic.py) — `ResultadoClinico`, `Mencion`, `Evidencia`, `Cobertura`
+- [Contrato clínico (dataclasses)](https://github.com/lucasmtnz23/cu04-extraccion-clinica/blob/main/experiments/formato_intermedio_poc/cli_rcp/modelo_dataclasses.py) — Mismo modelo sin Pydantic
+- [Casos sintéticos PoC anterior](https://github.com/lucasmtnz23/cu04-extraccion-clinica/blob/main/experiments/formato_intermedio_poc/cli_rcp/casos_sinteticos.py) — `D1`–`D7`
+- [Nuevo catálogo S1–S12](https://github.com/lucasmtnz23/cu04-extraccion-clinica/blob/main/experiments/extraccion_clinica_poc/casos.py) — Constructores parametrizables
+- [Motor de reglas](https://github.com/lucasmtnz23/cu04-extraccion-clinica/blob/main/experiments/extraccion_clinica_poc/motores.py) — `MotorReglas`, once familias, `MOTORES`
+- [Puerto del motor](https://github.com/lucasmtnz23/cu04-extraccion-clinica/blob/main/experiments/extraccion_clinica_poc/contrato.py) — `MotorExtraccion`, `EstadoEjecucion`, `NoComprobado`
 - [ADR estrategia de lectura PDF](../decisions/estrategia-lectura-pdf.md) — Patrón de ADR aceptado
 - [ADR formato intermedio](../decisions/formato-intermedio.md) — Pydantic v2, JSON, validadores propios
 - [Arquitectura CU-04](../ARCHITECTURE.md) — Componentes, flujo, contratos, trazabilidad
